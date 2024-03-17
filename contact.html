@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row content">
+      <div class="col-sm-3 sidenav">
+        <h4>My Blog</h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="about.html">Trang chủ</a></li>
+          <li><a href="map.html">Bản đồ địa điểm</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+          <li><a href="CV.pdf">CV</a></li>
+        </ul><br>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search Blog..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </div>
+
+    <div class="col-sm-5">
+      <!-- form thông tin cá nhân -->
+      <h2>Thông tin cá nhân</h2>
+      <form>
+        <div class="form-group">
+          <label>First name:</label>
+            <input type="text" class="form-control" id="fname" placeholder="Your name" >
+        </div>
+        <div class="form-group">
+          <label>Last name:</label>
+            <input type="text" class="form-control" id="lname" placeholder="Last name" >
+        </div>
+        <div class="form-group">
+          <label>Date of birth:</label> 
+          <input type="number" class="form-control" id="birth" placeholder="dd/mm/yy">
+        </div>
+        <div class="form-group">
+          <label>Your sex: </label>
+          Male<input type="radio" name="sex" value="male">
+          Female<input type="radio" name="sex" value="female">
+        </div>
+        <div class="form-group">
+          <label>Your country:</label>
+          <input type="text" class="form-control" id="country" placeholder="Your country">
+        </div>
+      </form>
+      <!-- form tài khoản -->
+        <h2>Đăng nhập tài khoản</h2>
+        <form>
+          <div class="col-sm-5">
+            <label for="TK">Your Account:</label>
+            <input type="text" class="form-control" id="TK" placeholder="Enter Account" >
+          </div>
+          <div class="col-sm-5">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" >
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+        
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
